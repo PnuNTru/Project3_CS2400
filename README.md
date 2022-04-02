@@ -8,6 +8,4 @@ Jonathan Pena:
 
 Phu Truong: Task 1, 2, & 3
 
-Javadoc Link:
-
 Screencast Link:
