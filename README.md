@@ -6,7 +6,7 @@ Contributions:
 
 Jonathan Pena:
 
-Phu Truong:
+Phu Truong: Task 1, 2, & 3
 
 Javadoc Link:
 
