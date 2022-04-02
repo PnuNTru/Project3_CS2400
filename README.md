@@ -6,8 +6,8 @@ Contributions:
 
 Jonathan Pena:
 
-Phu Truong:
-
-Javadoc Link:
+Phu Truong: Task 1, 2, & 3
 
 Screencast Link:
+
+Extra Features:
