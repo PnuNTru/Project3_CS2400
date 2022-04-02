@@ -104,9 +104,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
       {
          postorderTraverse(node.getLeftChild());
          postorderTraverse(node.getRightChild());
+         System.out.print(node.getData()+" ");
       
       }
-      System.out.print(node.getData()+" ");
 
    
    }
