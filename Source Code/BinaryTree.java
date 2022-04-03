@@ -1,3 +1,4 @@
+
 public class BinaryTree<T> implements BinaryTreeInterface<T>
 {
    private BinaryNode<T> root;
@@ -100,7 +101,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     * prints (using post-order traversal) all nodes in the subtree rooted at this node.*/
    private void postorderTraverse(BinaryNode<T> node)
    {
-      if (root != null)
+      if (node != null)
       {
          postorderTraverse(node.getLeftChild());
          postorderTraverse(node.getRightChild());
@@ -115,9 +116,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     * prints (using post-order traversal) all nodes in the "whole" tree */
    public void postorderTraverse_callBinaryNodeMethod()
    {
-      postorderTraverse_BinaryNodeMethod();
+      postorderTraverse_binaryNodeMethod(this.root);
 
    }
+   
    
    /** -------------------------------------------------------------------- */
    /** Task 2: Implement the 2 methods
