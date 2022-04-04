@@ -77,6 +77,17 @@ public class DriverBT
 	/**Task 4: Create a tree case as shown in assignment 3*/
 	public static void createTree2(BinaryTree<String> tree)
 	{ 
+		BinaryNode<String> Tree;
+		Tree = new BinaryNode<String>("A");
+		/*
+		t.setLeftChild() = new BinaryNode<String>("B");
+		t.setRightChild() = new BinaryNode<String>("C");
+		t.setLeftChild() = new BinaryNode<String>("D");
+		t.setRightChild() = new BinaryNode<String>("E");
+		t.setLeftChild() = new BinaryNode<String>("F");
+		t.setRightChild() = new BinaryNode<String>("G");
+		*/
+
 
 	} // end createTree2
 
