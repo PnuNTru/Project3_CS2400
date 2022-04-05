@@ -6,6 +6,10 @@ public class DriverBT
 		BinaryTree<String> aTree = new BinaryTree<>();
 		createTree1(aTree);
 		
+		System.out.println("2nd Testing Example:");
+		BinaryTree<String> Tree = new BinaryTree<>();
+		createTree2(Tree);
+		
 		System.out.println("(binaryTree) post-order: ");
 		aTree.postorderTraverse();
 		
