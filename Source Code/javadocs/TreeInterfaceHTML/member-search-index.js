@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"TreeInterface","l":"clear()"},{"p":"<Unnamed>","c":"TreeInterface","l":"getHeight()"},{"p":"<Unnamed>","c":"TreeInterface","l":"getNumberOfNodes()"},{"p":"<Unnamed>","c":"TreeInterface","l":"getRootData()"},{"p":"<Unnamed>","c":"TreeInterface","l":"isEmpty()"}]
