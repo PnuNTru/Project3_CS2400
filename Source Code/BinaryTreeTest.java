@@ -1,11 +1,36 @@
-import junit.framework.TestCase;
+import static org.junit.Assert.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class BinaryTreeTest {
+public class BinaryTreeTest 
+{
 
+    @Test
+    public void testgetHeight()
+    {
+        // Arrange
+        BinaryTree<String> dTree = new BinaryTree<>("D");
+        BinaryTree<String> eTree = new BinaryTree<>("E");
+        BinaryTree<String> gTree = new BinaryTree<>("G");
 
-    public void testgetHeight_callBinaryNodeMethod(){
+        BinaryTree<String> fTree = new BinaryTree<>("F", null, gTree);
+        BinaryTree<String> bTree = new BinaryTree<>("B", dTree, eTree);
+        BinaryTree<String> cTree = new BinaryTree<>("C", fTree, null);
+
+        BinaryTree<String> tree = new BinaryTree<String>();
+        tree.setTree("A", bTree, cTree);
+
+        // Act
+        int result = tree.getHeight();
+        int expected = 4;
+
+        // Assert
+        assertEquals(result, expected);
+    }
+
+    @Test
+    public void testgetHeight_callBinaryNodeMethod()
+    {
         // Arrange
         BinaryTree<String> dTree = new BinaryTree<>("D");
         BinaryTree<String> eTree = new BinaryTree<>("E");
@@ -25,8 +50,10 @@ class BinaryTreeTest {
         // Assert
         assertEquals(result, expected);
     }
-
-    public void testgetHeight_binaryNodeMethod(){
+    
+    @Test
+    public void testgetNumberOfNodes()
+    {
         // Arrange
         BinaryTree<String> dTree = new BinaryTree<>("D");
         BinaryTree<String> eTree = new BinaryTree<>("E");
@@ -40,14 +67,16 @@ class BinaryTreeTest {
         tree.setTree("A", bTree, cTree);
 
         // Act
-        int result = getHeight_binaryNodeMethod();
-        int expected = 4;
+        int result = tree.getNumberOfNodes();
+        int expected = 7;
 
         // Assert
         assertEquals(result, expected);
     }
 
-    public void testgetNumberOfNodes(){
+    @Test
+    public void testgetNumberOfNodes_callBinaryNodeMethod()
+    {
         // Arrange
         BinaryTree<String> dTree = new BinaryTree<>("D");
         BinaryTree<String> eTree = new BinaryTree<>("E");
@@ -61,7 +90,7 @@ class BinaryTreeTest {
         tree.setTree("A", bTree, cTree);
 
         // Act
-        int result = getNumberofNodes(tree.getRootNode());
+        int result = tree.getNumberOfNodes_callBinaryNodeMethod();
         int expected = 7;
 
         // Assert
