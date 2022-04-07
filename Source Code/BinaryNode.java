@@ -1,4 +1,4 @@
-public class BinaryNode<T>
+class BinaryNode<T>
 {
    private T             data;
    private BinaryNode<T> leftChild;  // Reference to left child
@@ -104,15 +104,14 @@ public class BinaryNode<T>
     * Part of Task 1 */
    /** A Recursive Method in the BinaryNode Class   
     * prints (using post-order traversal) all nodes of the subtree rooted at "this" node */
-   public void postorderTraverse_binaryNodeMethod()
-   {
-      if(this.hasLeftChild())
-         this.leftChild.postorderTraverse_binaryNodeMethod();
-      if(this.hasRightChild())
-         this.rightChild.postorderTraverse_binaryNodeMethod();
-      System.out.print(this.data + " ");
-   }
-   
+    public void postorderTraverse_binaryNodeMethod()
+    {
+       if(this.hasLeftChild())
+          this.leftChild.postorderTraverse_binaryNodeMethod();
+       if(this.hasRightChild())
+          this.rightChild.postorderTraverse_binaryNodeMethod();
+       System.out.print(this.data + " ");
+    }
    
    /**-------------------------------------------------------------------- 
     * Part of Task 2*/
@@ -122,10 +121,10 @@ public class BinaryNode<T>
    public int getHeight_binaryNodeMethod()
    {  
       int height = 0;
-      if (this.data != null)
+      if (this.node != null)
       {
-         height = 1 + Math.max(this.leftChild.getHeight_binaryNodeMethod(),
-                               this.rightChild.getHeight_binaryNodeMethod());
+         height = 1 + Math.max(getHeight(node.getLeftChild()),
+                               getHeight(node.getRightChild()));
       }
       return height;
    } // end getHeight
