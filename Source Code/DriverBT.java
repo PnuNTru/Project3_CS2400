@@ -104,17 +104,6 @@ public class DriverBT
 		System.out.println("    F   G   H  ");
 		System.out.println();
 
-		/*BinaryNode<String> Tree;
-		Tree = new BinaryNode<String>("A");
-	
-		t.setLeftChild() = new BinaryNode<String>("B");
-		t.setRightChild() = new BinaryNode<String>("C");
-		t.setLeftChild() = new BinaryNode<String>("D");
-		t.setRightChild() = new BinaryNode<String>("E");
-		t.setLeftChild() = new BinaryNode<String>("F");
-		t.setRightChild() = new BinaryNode<String>("G");
-		*/
-
 	} // end createTree2
 
 }  // end DriverBT
