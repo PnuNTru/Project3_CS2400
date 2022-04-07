@@ -1,4 +1,4 @@
- import junit.framework.TestCase;
+import junit.framework.TestCase;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -40,7 +40,7 @@ class BinaryTreeTest {
         tree.setTree("A", bTree, cTree);
 
         // Act
-        int result = getHeight_binaryNodeMethod(tree.getRootNode());
+        int result = getHeight_binaryNodeMethod();
         int expected = 4;
 
         // Assert
