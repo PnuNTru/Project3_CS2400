@@ -104,16 +104,15 @@ class BinaryNode<T>
     * Part of Task 1 */
    /** A Recursive Method in the BinaryNode Class   
     * prints (using post-order traversal) all nodes of the subtree rooted at "this" node */
-   public void postorderTraverse_binaryNodeMethod(BinaryNode<T> node)
-   {
-      if (this.node != null)
-      {
-         postorderTraverse_binaryNodeMethod(node.getLeftChild());
-         postorderTraverse_binaryNodeMethod(node.getRightChild());
-         System.out.print(getData()+" ");
-      }
-      
-   }
+    public void postorderTraverse_binaryNodeMethod()
+    {
+       if(this.hasLeftChild())
+          this.leftChild.postorderTraverse_binaryNodeMethod();
+       if(this.hasRightChild())
+          this.rightChild.postorderTraverse_binaryNodeMethod();
+       System.out.print(this.data + " ");
+    }
+   
    
    /**-------------------------------------------------------------------- 
     * Part of Task 2*/
