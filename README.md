@@ -4,7 +4,7 @@ Names: Jonathan Pena , Phu Truong
 
 Contributions:
 
-Jonathan Pena: Task 4, BinaryTreeTest.java, Javadoc, screencast video
+Jonathan Pena: Task 4, Unit testing, Javadoc, screencast video
 
 Phu Truong: Task 1, 2, & 3
 
